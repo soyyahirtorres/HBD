@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Cumpleaños</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="full-screen"> 
+        <h1>¡Feliz Cumpleaños, Urielito! </h1>
+        <button class="button-link" id="btnMensaje">Presiona aquí</button>
+
+        <div class="hearts-container">
+            <span class="heart" style="left: 10%; animation-delay: 0s;">❤️</span>
+            <span class="heart" style="left: 20%; animation-delay: 1s;">💙</span>
+            <span class="heart" style="left: 30%; animation-delay: 2s;">❤️</span>
+            <span class="heart" style="left: 40%; animation-delay: 0s;">💙</span>
+            <span class="heart" style="left: 50%; animation-delay: 1s;">❤️</span>
+            <span class="heart" style="left: 60%; animation-delay: 2s;">💙</span>
+            <span class="heart" style="left: 70%; animation-delay: 0s;">❤️</span>
+            <span class="heart" style="left: 80%; animation-delay: 1s;">💙</span>
+            <span class="heart" style="left: 90%; animation-delay: 2s;">❤️</span>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Seleccionamos el botón
+            const button = document.getElementById("btnMensaje");
+
+            // Verificamos que el botón existe antes de agregar el evento
+            if (button) {
+                button.addEventListener("click", function() {
+                    window.location.href = "mensaje.html"; // Cambia esta ruta si el archivo está en otra carpeta
+                });
+            }
+        });
+    </script>
+</body>
+</html>
+

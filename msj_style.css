@@ -1,0 +1,200 @@
+.navbar {
+    width: 100%;
+    background: linear-gradient(135deg, #1e88e5, #64b5f6);
+    color: white;
+    padding: 15px 0;
+    font-size: 24px;
+    font-weight: bold;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-p {
+    margin: 0; 
+    text-align: center;
+}
+
+.container{
+    margin-top: 8%;
+    align-items: center;
+}
+
+.cart-text{
+    font-style: italic;
+}
+
+
+.message {
+    max-width: 600px;
+}
+
+.full-screen {
+    font-family: 'Times New Roman', Times, serif;
+    padding: 5%;
+    font-size: 1.5rem;
+    color: white;
+    background: linear-gradient(135deg, #1e88e5d0, #64b5f6);
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    
+}
+
+.full-screen-sq{
+    font-size: 2rem;
+    font-weight: bold;
+
+}
+
+.full-screen-text{
+    text-align: center;
+}
+
+.container-razones{
+    margin: 2%;
+}
+
+.container-razones-title{
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.container-razones-list{
+    border: 2px dashed black; 
+    padding: 2rem;
+    padding: 15px; 
+    margin: 20px auto; 
+    text-align: center; 
+    border-radius: 10px; 
+    
+}
+
+.container-girasol{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    background: linear-gradient(135deg, #1e88e5d0, #64b5f6);
+    margin-top: 10%;
+    padding-bottom: 5%;
+    
+    overflow: hidden;
+}
+
+.girasol {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    animation: girasol-balanceo 3s infinite ease-in-out;
+}
+.centro {
+    width: 30px;
+    height: 30px;
+    background-color: brown;
+    border-radius: 50%;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.petalo {
+    width: 20px;
+    height: 60px;
+    background-color: yellow;
+    border-radius: 50% 50% 0 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: bottom;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+.tallo {
+    width: 10px;
+    height: 100px;
+    background-color: green;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    z-index: 0;
+}
+
+.final{
+    font-size: 3rem;
+    text-align: center;
+    font-family:sans-serif;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer {
+    background-color:#aaaa;
+    color: #313131;
+    text-align: center; 
+    padding: 10px 0; 
+    font-size: 14px; 
+    bottom: 0;
+    width: 100%;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        margin-top: 15%; /* Se ajusta para mejor alineación */
+        padding-top: 10px; /* Evita que el navbar lo tape */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .full-screen {
+        font-size: 1.2rem;
+        height: auto;
+        padding: 8%;
+    }
+
+    .container-girasol {
+        height: 40vh; /* Se reduce el tamaño del girasol */
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        margin-top: 20%;
+        padding-top: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .full-screen {
+        font-size: 1rem;
+        height: auto;
+        padding: 10%;
+    }
+
+    .container-razones-list {
+        padding: 10px;
+    }
+
+    .final {
+        font-size: 2rem; /* Se reduce el tamaño del texto */
+    }
+
+    .container-girasol {
+        height: 35vh; /* Se adapta mejor a móviles */
+    }
+}
+
